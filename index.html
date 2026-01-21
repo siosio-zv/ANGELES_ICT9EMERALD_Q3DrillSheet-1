@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drill Sheet 1 : Basic Calculator</title>
+    <style>
+
+        body{
+            text-align: center;
+			text-shadow: 1cap;
+			size: 50ch;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="output"></div>
+
+<script>
+
+        // String
+        let a = Number(10);
+        let b = Number(20);
+        
+        let addition = a + b;
+        let subtraction = a - b;
+        let multiplication = a * b;
+        let division = a / b;
+
+        
+     document.getElementById("output").innerHTML = 
+        "<h2>Basic Calculator Display</h2>" + 
+        "Addition: " + a + " + " + b + "<br>" +  
+         "= " + addition + "<br><br>" +
+        "Subtraction: " + a + " - " + b + "<br>" +  
+        "= " + subtraction + "<br><br>" +
+        "Multiplication: " + a + " * " + b + "<br>" +
+        "= " + multiplication + "<br><br>" +
+        "Division: " + a + " / " + b + "<br>" + 
+        "= " + division;
+    </script>
+
+</body>
+</html>
